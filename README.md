@@ -3,6 +3,12 @@
 This library relies entirely on bitwise operations to insert and extract numbers. No string manipulation.
 It does however use BigInts to support numbers larger than JavaScript's maximum of 53 bits, which may have minor performace or memory costs.
 
+## Installing
+
+```
+npm i git+https://github.com/aery-chan/ts_bitpattern.git
+```
+
 ## Example
 
 ```ts
