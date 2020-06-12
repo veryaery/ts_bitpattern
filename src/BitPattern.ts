@@ -19,7 +19,7 @@ export class BitPattern {
         let n: bigint = 0n;
         let offset: number = 0;
 
-        for (const element of this.pattern.slice().reverse()) {
+        for (const element of [ ...this.pattern ].reverse()) {
             const symbol: string = element[1];
             const size: number = element[0];
 
@@ -53,7 +53,7 @@ export class BitPattern {
         const data: Data = {};
         let offset: number = 0;
 
-        for (const element of this.pattern.slice().reverse()) {
+        for (const element of [ ...this.pattern ].reverse()) {
             const symbol: string = element[1];
             const size: number = element[0];
 
