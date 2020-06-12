@@ -11,7 +11,7 @@ class BitPattern {
     fill(data) {
         let n = 0n;
         let offset = 0;
-        for (const element of this.pattern.slice().reverse()) {
+        for (const element of [...this.pattern].reverse()) {
             const symbol = element[1];
             const size = element[0];
             const value = data[symbol];
@@ -39,11 +39,11 @@ class BitPattern {
     pull(n) {
         const data = {};
         let offset = 0;
-        for (const element of this.pattern.slice().reverse()) {
+        for (const element of [...this.pattern].reverse()) {
             const symbol = element[1];
             const size = element[0];
-            const mask = (2n ** BigInt(size) - 1n) << BigInt(offset);
-            const value = (n & mask) >> BigInt(offset);
+            const mask = (2n ** BigInt(size)) - 1n;
+            const value = (n >> BigInt(offset)) & mask;
             data[symbol] = value;
             offset += size;
         }

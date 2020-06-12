@@ -57,8 +57,8 @@ export class BitPattern {
             const symbol: string = element[1];
             const size: number = element[0];
 
-            const mask: bigint = (2n ** BigInt(size) - 1n) << BigInt(offset);
-            const value: bigint = (n & mask) >> BigInt(offset);
+            const mask: bigint = (2n ** BigInt(size)) - 1n;
+            const value: bigint = (n >> BigInt(offset)) & mask;
 
             data[symbol] = value;
 
