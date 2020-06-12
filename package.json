@@ -6,7 +6,6 @@
     "types": "compiled/index.d.ts",
     "scripts": {
         "build": "tsc",
-        "run": "npm run build && node .",
         "test": "npm run build && jest"
     },
     "author": "Aery",
