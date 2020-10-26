@@ -1,7 +1,6 @@
 # BitPattern
 
-This library relies entirely on bitwise operations to insert and extract numbers. No string manipulation.
-It does however use BigInts to support numbers larger than JavaScript's maximum of 53 bits, which may have minor performace or memory costs.
+Encode fixed size numbers in numbers
 
 ## Installing
 
