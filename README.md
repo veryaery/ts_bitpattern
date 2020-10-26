@@ -5,7 +5,7 @@ Encode fixed size numbers in numbers
 ## Installing
 
 ```
-npm i git+https://github.com/aery-chan/ts_bitpattern.git
+npm i git+https://github.com/nyaaery/ts_bitpattern.git
 ```
 
 ## Example
